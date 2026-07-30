@@ -1,0 +1,3 @@
+document.addEventListener('DOMContentLoaded',()=>{const tt=document.getElementById('theme-toggle')
+const at=(theme)=>{document.body.classList.toggle('dark-mode',theme==='dark-mode');tt.textContent=theme==='dark-mode'?'☀️':'🌙';localStorage.setItem('theme',theme)}
+const st=localStorage.getItem('theme');st?at(st):window.matchMedia('(prefers-color-scheme: dark)').matches?at('dark-mode'):at('light-mode');tt.addEventListener('click',()=>at(document.body.classList.contains('dark-mode')?'light-mode':'dark-mode'))})
