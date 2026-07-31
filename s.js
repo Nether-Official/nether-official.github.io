@@ -1,2 +1,1 @@
-document.addEventListener('DOMContentLoaded',()=>{const tt=document.getElementById('theme-toggle');const ui=(id)=>{tt.textContent=id?'☀️':'🌙'}
-ui(document.documentElement.classList.contains('dark-mode'));tt.addEventListener('click',()=>{const id=document.documentElement.classList.toggle('dark-mode');localStorage.setItem('theme',id?'dark-mode':'light-mode');ui(id)})})
+document.addEventListener('DOMContentLoaded',()=>{let tt=document.getElementById('tt');let ui=(id)=>{tt.textContent=id?'☀️':'🌙'};ui(document.documentElement.classList.contains('dm'));tt.addEventListener('click',()=>{let id=document.documentElement.classList.toggle('dm');localStorage.setItem('t',id?'dm':'lm');ui(id)})})

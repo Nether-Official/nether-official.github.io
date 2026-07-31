@@ -8,14 +8,7 @@
     <link rel="icon" type="image/ico" sizes="48x48" href="f.ico">
     <link rel="prefetch" href="index.html">
     <link rel="prefetch" href="tos.html">
-    <script>
-        (function() {
-            const st = localStorage.getItem('theme');
-            if (st === 'dark-mode' || (!st && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                document.documentElement.classList.add('dark-mode');
-            }
-        })();
-    </script>
+    <script>(()=>{const st = localStorage.getItem('t');if (st === 'dm' || (!st && window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dm')})()</script>
 </head>
 <body>
     <header>
@@ -25,7 +18,7 @@
                 <a href="index.html">Home</a>
                 <a href="tos.html">Terms of Service</a>
             </nav>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+            <button id="tt" class="tt" aria-label="Toggle Theme">🌙</button>
         </div>
     </header>
     <main class="container">
