@@ -1,1 +1,2 @@
+(()=>{const st = localStorage.getItem('t');if (st === 'dm' || (!st && window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dm')})()
 document.addEventListener('DOMContentLoaded',()=>{let tt=document.getElementById('tt');let ui=(id)=>{tt.textContent=id?'☀️':'🌙'};ui(document.documentElement.classList.contains('dm'));tt.addEventListener('click',()=>{let id=document.documentElement.classList.toggle('dm');localStorage.setItem('t',id?'dm':'lm');ui(id)})})
